@@ -4,7 +4,7 @@
 <h3 align="center">I'm a passionate Software Developer.</h3>
  
 🎓 Computer Engineering Student @ SBJIT (2nd Year)  
-🔥 Aspiring Developer | 🌱 From Parsodi, Wardha | 🚀 Always Learning  
+🔥 Aspiring Developer | 🌱 From Bhalewadi, Wardha | 🚀 Always Learning  
 
 ---
 
@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=svpcet-code&show_icons=true&theme=radical" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Yogesh-kadwe&show_icons=true&theme=radical" height="160"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yogesh-kadwe&layout=compact&theme=tokyonight" height="160"/>
 </p>
 
@@ -32,7 +32,7 @@
 
 ## 🚀 Skills  
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,php,python,cpp,git,github,figma,ai,powerbi&perline=7" alt="My Skills"/>
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,java,python,git,github,figma,&perline=7" alt="My Skills"/>
 </p>
 
 ---
