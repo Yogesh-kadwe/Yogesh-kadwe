@@ -3,7 +3,7 @@
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm Yogesh</h1>
 <h3 align="center">I'm a passionate Software Developer.</h3>
  
-🎓 Computer Engineering Student @ SBJIT (2nd Year)  
+🎓 Computer Engineering Student @ SBJIT (3nd Year)  
 🔥 Aspiring Developer | 🌱 From Bhalewadi, Wardha | 🚀 Always Learning  
 
 ---
