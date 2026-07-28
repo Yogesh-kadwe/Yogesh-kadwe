@@ -24,8 +24,7 @@
 
 <td align="center">
 
-<img src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" width="320"/>
-
+<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="260"/>
 </td>
 
 </tr>
