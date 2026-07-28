@@ -2,7 +2,7 @@
 
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm Yogesh</h1>
 <h3 align="center">I'm a passionate Software Developer.</h3>
-## 📊 About Me
+## 👨‍💻 About Me
 
 <table>
 <tr>
@@ -11,24 +11,14 @@
 
 ### 👋 Hi, I'm Yogesh Kadwe
 
-🎓 **B.Tech CSE Student** at **SBJITMR, Nagpur**
-
-📊 **Aspiring Data Scientist** passionate about uncovering insights from data.
-
-### 🚀 Interests
-
-- 🐍 Python & SQL
-- 📈 Data Analysis & Visualization
-- 🤖 Machine Learning & AI
-- 📊 Power BI & Statistics
-- 🧠 Deep Learning
-- 💡 Real-world Data Science Projects
-
-### 🎯 Goal
-
-Become a skilled **Data Scientist** and build AI-powered solutions that make a real impact.
-
-📫 **Email:** **kadweyogesh188@gmail.com**
+- 🎓 **B.Tech CSE Student** at **SBJITMR, Nagpur**
+- 📊 **Aspiring Data Scientist**
+- 🐍 Python | SQL | Machine Learning | Data Analysis
+- 📈 Passionate about extracting insights from data
+- 🤖 Interested in AI, Machine Learning, Computer Vision & NLP
+- 🌱 Currently learning **Data Science, Statistics, Power BI & Deep Learning**
+- 🚀 Building projects to strengthen my Data Science portfolio
+- 📫 **Email:** **kadweyogesh188@gmail.com**
 
 </td>
 
@@ -40,7 +30,6 @@ Become a skilled **Data Scientist** and build AI-powered solutions that make a r
 
 </tr>
 </table>
-
 
 ## 📊 GitHub Analytics
 
