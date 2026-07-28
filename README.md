@@ -2,38 +2,44 @@
 
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">, I'm Yogesh</h1>
 <h3 align="center">I'm a passionate Software Developer.</h3>
- ## 👨‍💻 About Me
+## 📊 About Me
 
 <table>
 <tr>
 
 <td width="60%">
 
-- 🎓 B.Tech CSE Student at **SBJITMR, Nagpur**
-- 📊 Aspiring **Data Scientist**
-- 🐍 Python | SQL | Machine Learning | Data Analysis
-- 📈 Passionate about extracting insights from data
-- 🤖 Interested in AI, ML, Computer Vision & NLP
-- 🌱 Currently learning Data Science, Statistics, Power BI & Deep Learning
-- 🚀 Building projects to strengthen my Data Science portfolio
-- 📫 **kadweyogesh188@gmail.com**
+### 👋 Hi, I'm Yogesh Kadwe
+
+🎓 **B.Tech CSE Student** at **SBJITMR, Nagpur**
+
+📊 **Aspiring Data Scientist** passionate about uncovering insights from data.
+
+### 🚀 Interests
+
+- 🐍 Python & SQL
+- 📈 Data Analysis & Visualization
+- 🤖 Machine Learning & AI
+- 📊 Power BI & Statistics
+- 🧠 Deep Learning
+- 💡 Real-world Data Science Projects
+
+### 🎯 Goal
+
+Become a skilled **Data Scientist** and build AI-powered solutions that make a real impact.
+
+📫 **Email:** **kadweyogesh188@gmail.com**
 
 </td>
 
-<td>
+<td align="center">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3V4d3d1M2I2Nm5vZnJtbDd4dHVvMGJmZ3h4dTRwdGg5aDZpY2l3NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0HlNaQ6gWfllcjDO/giphy.gif" width="320"/>
+<img src="https://raw.githubusercontent.com/AVS1508/AVS1508/master/assets/Night-Coding.gif" width="320"/>
 
 </td>
 
 </tr>
 </table>
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=550&lines=Turning+Ideas+into+Code;AI+%26+Web+Enthusiast;Keep+Learning+Everyday;Code.+Build.+Inspire." alt="Typing Animation"/>
-</p>
-
-----
 
 
 ## 📊 GitHub Analytics
