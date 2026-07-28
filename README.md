@@ -23,7 +23,7 @@
 </td>
 
 <td align="center">
-<img src="https://raw.githubusercontent.com/NightRang3r/NightRang3r/master/assets/programmer.gif" width="320"/>
+<img src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" width="320"/>
 </td>
 
 </tr>
