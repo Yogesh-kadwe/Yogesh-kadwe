@@ -7,7 +7,7 @@
 <table>
 <tr>
 
-<td width="60%">
+<td width="65%">
 
 ### 👋 Hi, I'm Yogesh Kadwe
 
