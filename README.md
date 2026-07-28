@@ -11,26 +11,25 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=550&lines=Turning+Ideas+into+Code;AI+%26+Web+Enthusiast;Keep+Learning+Everyday;Code.+Build.+Inspire." alt="Typing Animation"/>
 </p>
----
 
-# 📊 GitHub Analytics
+----
+
+
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Yogesh-kadwe&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Yogesh-kadwe&show_icons=true&theme=tokyonight&hide_border=true&cache_seconds=86400"/>
 
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yogesh-kadwe&layout=compact&theme=tokyonight&hide_border=true"/>
 
 <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Yogesh-kadwe&theme=tokyo-night&hide_border=true"/>
 
-<img width="60%" src="https://github-readme-streak-stats.herokuapp.com/?user=Yogesh-kadwe&theme=tokyonight&hide_border=true"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=Yogesh-kadwe&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6"/>
+<img width="60%" src="https://streak-stats.demolab.com?user=Yogesh-kadwe&theme=tokyonight&hide_border=true"/>
 
 </div>
 
 ---
-
 ## 🚀 Skills  
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,java,python,git,github,figma,&perline=7" alt="My Skills"/>
