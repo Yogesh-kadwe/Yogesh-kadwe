@@ -23,8 +23,7 @@
 </td>
 
 <td align="center">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="260"/>
+<img src="https://raw.githubusercontent.com/NightRang3r/NightRang3r/master/assets/programmer.gif" width="320"/>
 </td>
 
 </tr>
