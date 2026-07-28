@@ -11,22 +11,21 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=550&lines=Turning+Ideas+into+Code;AI+%26+Web+Enthusiast;Keep+Learning+Everyday;Code.+Build.+Inspire." alt="Typing Animation"/>
 </p>
-
 ---
 
-## 📊 GitHub Dashboard  
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Yogesh-kadwe&theme=react-dark&area=true" alt="Activity Graph"/>
-</p>
+# 📊 GitHub Analytics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yogesh-kadwe&show_icons=true&theme=radical" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yogesh-kadwe&layout=compact&theme=tokyonight" height="160"/>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yogesh-kadwe&theme=dark" height="160"/>
-</p>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=svpcet-code&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=svpcet-code&layout=compact&theme=tokyonight&hide_border=true"/>
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=svpcet-code&theme=github-compact&hide_border=true"/>
+
+<img width="60%" src="https://github-readme-streak-stats.herokuapp.com/?user=svpcet-code&theme=tokyonight&hide_border=true"/>
+
+</div>
 
 ---
 
