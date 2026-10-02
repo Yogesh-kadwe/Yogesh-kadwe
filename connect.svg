@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="conn-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060912" />
+      <stop offset="50%" stop-color="#0b1220" />
+      <stop offset="100%" stop-color="#05070f" />
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="conn-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#080e1a" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="conn-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="conn-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="conn-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#334155" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes beacon-pulse {
+      0% { r: 4; opacity: 1; }
+      50% { r: 12; opacity: 0; }
+      100% { r: 4; opacity: 1; }
+    }
+    @keyframes card-hover-fx {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes pulse-cyan {
+      0%, 100% { stroke-opacity: 0.6; }
+      50% { stroke-opacity: 1; filter: drop-shadow(0 0 6px #00f2fe); }
+    }
+    @keyframes pulse-pink {
+      0%, 100% { stroke-opacity: 0.6; }
+      50% { stroke-opacity: 1; filter: drop-shadow(0 0 6px #ec4899); }
+    }
+    @keyframes pulse-purple {
+      0%, 100% { stroke-opacity: 0.6; }
+      50% { stroke-opacity: 1; filter: drop-shadow(0 0 6px #a855f7); }
+    }
+
+    .beacon { animation: beacon-pulse 2s infinite ease-out; }
+    .card-f1 { animation: card-hover-fx 4s ease-in-out infinite; }
+    .card-f2 { animation: card-hover-fx 4.5s ease-in-out 0.3s infinite; }
+    .card-f3 { animation: card-hover-fx 4.2s ease-in-out 0.6s infinite; }
+    .glow-cyan { animation: pulse-cyan 3s infinite ease-in-out; }
+    .glow-pink { animation: pulse-pink 3s infinite ease-in-out 0.5s; }
+    .glow-purple { animation: pulse-purple 3s infinite ease-in-out 1s; }
+
+    .font-sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+    .font-mono { font-family: 'SF Pro Text', 'Fira Code', 'Roboto Mono', monospace; }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="916" height="296" rx="20" fill="url(#conn-bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="2" y="2" width="916" height="296" rx="20" fill="url(#conn-grid)"/>
+
+  <!-- Top Ambient Light (Background decoration) -->
+  <circle cx="460" cy="25" r="130" fill="#38bdf8" opacity="0.05" filter="url(#conn-glow)"/>
+
+  <!-- Header & Status Bar -->
+  <g transform="translate(40, 24)">
+    <!-- Broadcast Status Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="170" height="22" rx="6" fill="#0f172a" stroke="#00f2fe" stroke-width="1"/>
+      <circle cx="14" cy="11" r="8" fill="none" stroke="#00f2fe" class="beacon"/>
+      <circle cx="14" cy="11" r="3.5" fill="#00f2fe" />
+      <text x="26" y="15" class="font-mono" font-size="9.5" font-weight="bold" fill="#00f2fe" letter-spacing="1">SIGNAL BROADCASTING</text>
+    </g>
+    
+    <!-- Main Heading -->
+    <text x="0" y="52" class="font-sans" font-size="24" font-weight="900" fill="url(#conn-title-grad)">
+      Let's Connect &amp; Collaborate
+    </text>
+
+    <!-- Right-aligned Status / Tagline -->
+    <text x="840" y="52" class="font-mono" font-size="11" fill="#94a3b8" text-anchor="end">
+      [ OPEN FOR DATA SCIENCE &amp; TECH ROLES ]
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 3 CONNECT CARDS (Equal Grid: 264px width, 24px gap) -->
+  <!-- ======================================================== -->
+
+  <!-- CARD 1: LinkedIn -->
+  <g transform="translate(40, 100)">
+    <a href="https://www.linkedin.com/in/yogesh-kadwe-a29985333" target="_blank">
+      <g class="card-f1">
+        <rect width="264" height="148" rx="14" fill="url(#conn-card-bg)" stroke="#00f2fe" stroke-width="1.2" class="glow-cyan"/>
+        <path d="M 14 0 L 250 0" stroke="#00f2fe" stroke-width="2.5" stroke-linecap="round"/>
+
+        <circle cx="36" cy="36" r="18" fill="#091424" stroke="#00f2fe" stroke-width="1.2" />
+        <g transform="translate(26, 26)">
+          <path d="M 2 2 A 2 2 0 0 0 0 4 L 0 16 A 2 2 0 0 0 2 18 L 18 18 A 2 2 0 0 0 20 16 L 20 4 A 2 2 0 0 0 18 2 Z M 5.5 4.5 A 1.5 1.5 0 1 1 5.5 7.5 A 1.5 1.5 0 0 1 5.5 4.5 Z M 4 8.5 L 7 8.5 L 7 15.5 L 4 15.5 Z M 9 8.5 L 11.8 8.5 L 11.8 9.5 C 12.4 8.7 13.3 8.3 14.5 8.3 C 16.8 8.3 17.5 9.8 17.5 12.2 L 17.5 15.5 L 14.8 15.5 L 14.8 12.8 C 14.8 11.6 14.3 11 13.2 11 C 12 11 11.8 11.8 11.8 12.9 L 11.8 15.5 L 9 15.5 Z" fill="#00f2fe"/>
+        </g>
+
+        <text x="64" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">LinkedIn Profile</text>
+        <text x="64" y="48" class="font-mono" font-size="10" fill="#00f2fe">@yogesh-kadwe</text>
+
+        <text x="18" y="78" class="font-sans" font-size="11.5" fill="#94a3b8">
+          Connect professionally,
+        </text>
+        <text x="18" y="95" class="font-sans" font-size="11.5" fill="#94a3b8">
+          explore my work &amp; opportunities.
+        </text>
+
+        <g transform="translate(18, 110)">
+          <rect width="228" height="26" rx="6" fill="#061e33" stroke="#00f2fe" stroke-width="1"/>
+          <text x="114" y="17" class="font-mono" font-size="8" font-weight="bold" fill="#38bdf8" text-anchor="middle">linkedin.com/in/yogesh-kadwe-a29985333 ↗</text>
+        </g>
+      </g>
+    </a>
+  </g>
+
+  <!-- CARD 2: Instagram -->
+  <g transform="translate(328, 100)">
+    <g class="card-f2">
+      <rect width="264" height="148" rx="14" fill="url(#conn-card-bg)" stroke="#ec4899" stroke-width="1.2" class="glow-pink"/>
+      <path d="M 14 0 L 250 0" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round"/>
+
+      <circle cx="36" cy="36" r="18" fill="#2d0b22" stroke="#ec4899" stroke-width="1.2" />
+      <g transform="translate(26, 26)">
+        <rect x="2" y="2" width="16" height="16" rx="4" fill="none" stroke="#f472b6" stroke-width="1.5" />
+        <circle cx="10" cy="10" r="4" fill="none" stroke="#f472b6" stroke-width="1.5" />
+        <circle cx="14.5" cy="5.5" r="1" fill="#f472b6" />
+      </g>
+
+      <text x="64" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">Instagram</text>
+      <text x="64" y="48" class="font-mono" font-size="10" fill="#f472b6">@yogesh_kadwe</text>
+
+      <text x="18" y="78" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Connect on social media, lifestyle,
+      </text>
+      <text x="18" y="95" class="font-sans" font-size="11.5" fill="#94a3b8">
+        interests &amp; tech updates.
+      </text>
+
+      <g transform="translate(18, 110)">
+        <rect width="228" height="26" rx="6" fill="#380d2b" stroke="#ec4899" stroke-width="1"/>
+        <text x="114" y="17" class="font-mono" font-size="10" font-weight="bold" fill="#f472b6" text-anchor="middle">instagram.com/yogesh_kadwe ↗</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 3: Email -->
+  <g transform="translate(616, 100)">
+    <g class="card-f3">
+      <rect width="264" height="148" rx="14" fill="url(#conn-card-bg)" stroke="#a855f7" stroke-width="1.2" class="glow-purple"/>
+      <path d="M 14 0 L 250 0" stroke="#a855f7" stroke-width="2.5" stroke-linecap="round"/>
+
+      <circle cx="36" cy="36" r="18" fill="#200d36" stroke="#a855f7" stroke-width="1.2" />
+      <g transform="translate(26, 26)">
+        <rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="#c084fc" stroke-width="1.5" />
+        <path d="M 2 5 L 10 11 L 18 5" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+
+      <text x="64" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">Direct Email</text>
+      <text x="64" y="48" class="font-mono" font-size="9" fill="#c084fc">kadweyogesh188@gmail.com</text>
+
+      <text x="18" y="78" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Send an inquiry, collaboration idea
+      </text>
+      <text x="18" y="95" class="font-sans" font-size="11.5" fill="#94a3b8">
+        or project opportunity.
+      </text>
+
+      <g transform="translate(18, 110)">
+        <rect width="228" height="26" rx="6" fill="#240c3d" stroke="#a855f7" stroke-width="1"/>
+        <text x="114" y="17" class="font-mono" font-size="9.5" font-weight="bold" fill="#c084fc" text-anchor="middle">kadweyogesh188@gmail.com ✉</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Quote Bar -->
+  <g transform="translate(0, 274)">
+    <text x="460" y="0" class="font-mono" font-size="10.5" fill="#64748b" text-anchor="middle">
+      ⚡ "Code Today, Create Tomorrow 🚀" ⚡
+    </text>
+  </g>
+
+</svg>

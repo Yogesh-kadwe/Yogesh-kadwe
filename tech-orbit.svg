@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="orbit-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811" />
+      <stop offset="50%" stop-color="#0b1122" />
+      <stop offset="100%" stop-color="#04070e" />
+    </linearGradient>
+
+    <!-- Core Gradients -->
+    <linearGradient id="core-sun-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="40%" stop-color="#3b82f6" />
+      <stop offset="80%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="orbit-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+
+    <!-- HUD Gradients -->
+    <linearGradient id="hud-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#070d18" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="orbit-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="core-flare" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" />
+    </filter>
+
+    <pattern id="radar-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="0.8" fill="#334155" opacity="0.4"/>
+      <line x1="0" y1="15" x2="30" y2="15" stroke="#1e293b" stroke-width="0.3" stroke-opacity="0.3"/>
+      <line x1="15" y1="0" x2="15" y2="30" stroke="#1e293b" stroke-width="0.3" stroke-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes spin-cw-1 {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spin-ccw-2 {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes spin-cw-3 {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes core-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 20px #00f2fe); }
+    }
+    @keyframes radar-sweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes float-hud {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .orbit-ring-1 { transform-origin: 460px 240px; animation: spin-cw-1 30s linear infinite; }
+    .orbit-ring-2 { transform-origin: 460px 240px; animation: spin-ccw-2 42s linear infinite; }
+    .orbit-ring-3 { transform-origin: 460px 240px; animation: spin-cw-3 55s linear infinite; }
+    
+    .core-animated { transform-origin: 460px 240px; animation: core-pulse 4s ease-in-out infinite; }
+    .radar-beam { transform-origin: 460px 240px; animation: radar-sweep 8s linear infinite; }
+    .hud-float { animation: float-hud 4s ease-in-out infinite; }
+
+    .font-sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+    .font-mono { font-family: 'SF Pro Text', 'Fira Code', 'Roboto Mono', monospace; }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="916" height="456" rx="22" fill="url(#orbit-bg)" stroke="#1e293b" stroke-width="1.5" />
+  <rect x="2" y="2" width="916" height="456" rx="22" fill="url(#radar-grid)" />
+
+  <!-- Center Ambient Flare -->
+  <circle cx="460" cy="240" r="150" fill="#00f2fe" opacity="0.08" filter="url(#core-flare)"/>
+  <circle cx="460" cy="240" r="100" fill="#8b5cf6" opacity="0.12" filter="url(#core-flare)"/>
+
+  <!-- Top Header Bar -->
+  <g transform="translate(40, 32)">
+    <rect width="120" height="22" rx="6" fill="#0b1324" stroke="#00f2fe" stroke-width="1" />
+    <text x="60" y="15" class="font-mono" font-size="10" font-weight="bold" fill="#00f2fe" text-anchor="middle" letter-spacing="1">TECH ECOSYSTEM</text>
+    
+    <text x="0" y="50" class="font-sans" font-size="26" font-weight="900" fill="url(#orbit-title-grad)">
+      Planetary Technology Orbit
+    </text>
+    
+    <text x="840" y="48" class="font-mono" font-size="11" fill="#94a3b8" text-anchor="end">
+      [ AI • DATA SCIENCE • FULL STACK ]
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- LEFT HUD: PYTHON LIBRARIES -->
+  <!-- ======================================================== -->
+  <g transform="translate(30, 115)">
+    <g class="hud-float">
+      <rect width="190" height="310" rx="14" fill="url(#hud-panel)" stroke="#1e293b" stroke-width="1.2" />
+      <path d="M 12 0 L 178 0" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+      
+      <text x="16" y="26" class="font-mono" font-size="10.5" font-weight="bold" fill="#38bdf8" letter-spacing="1">PYTHON LIBRARIES</text>
+      <line x1="16" y1="36" x2="174" y2="36" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Library 1: NumPy -->
+      <g transform="translate(16, 52)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">NumPy</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Numerical computing &amp; arrays</text>
+      </g>
+
+      <!-- Library 2: Pandas -->
+      <g transform="translate(16, 104)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Pandas</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Data manipulation &amp; analysis</text>
+      </g>
+
+      <!-- Library 3: Scikit-learn -->
+      <g transform="translate(16, 156)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Scikit-learn</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Machine learning &amp; model building</text>
+      </g>
+
+      <!-- Library 4: Matplotlib -->
+      <g transform="translate(16, 208)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Matplotlib</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Data visualization &amp; plotting</text>
+      </g>
+
+      <!-- Library 5: SciPy -->
+      <g transform="translate(16, 260)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">SciPy</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Scientific computing &amp; mathematics</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- RIGHT HUD: TECHNICAL EXPERTISE -->
+  <!-- ======================================================== -->
+  <g transform="translate(700, 115)">
+    <g class="hud-float">
+      <rect width="190" height="310" rx="14" fill="url(#hud-panel)" stroke="#1e293b" stroke-width="1.2" />
+      <path d="M 12 0 L 178 0" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+      
+      <text x="16" y="26" class="font-mono" font-size="10.5" font-weight="bold" fill="#38bdf8" letter-spacing="1">TECHNICAL EXPERTISE</text>
+      <line x1="16" y1="36" x2="174" y2="36" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Domain 1: Machine Learning -->
+      <g transform="translate(16, 52)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Machine Learning</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Supervised &amp; unsupervised learning</text>
+      </g>
+
+      <!-- Domain 2: Vision & OpenCV -->
+      <g transform="translate(16, 104)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Vision &amp; OpenCV</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Image processing &amp; object detection</text>
+      </g>
+
+      <!-- Domain 3: NLP & Text Mining -->
+      <g transform="translate(16, 156)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">NLP &amp; Text Mining</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Text classification &amp; NLP models</text>
+      </g>
+
+      <!-- Domain 4: Data Science & SQL -->
+      <g transform="translate(16, 208)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Data Science &amp; SQL</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Data analysis &amp; database querying</text>
+      </g>
+
+      <!-- Domain 5: Deep Learning & Statistics -->
+      <g transform="translate(16, 260)">
+        <text x="0" y="12" class="font-sans" font-size="12" font-weight="700" fill="#f8fafc">Deep Learning &amp; Statistics</text>
+        <text x="0" y="27" class="font-sans" font-size="8.5" fill="#94a3b8">Neural networks &amp; statistical analysis</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CENTER PLANETARY ORBIT SYSTEM -->
+  <!-- ======================================================== -->
+
+  <circle cx="460" cy="240" r="72" fill="none" stroke="#00f2fe" stroke-width="1" stroke-dasharray="3 5" opacity="0.35"/>
+  <circle cx="460" cy="240" r="122" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="4 6" opacity="0.4"/>
+  <circle cx="460" cy="240" r="170" fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="5 7" opacity="0.3"/>
+
+  <!-- Radar Scanning Beam -->
+  <g class="radar-beam" opacity="0.25">
+    <path d="M 460 240 L 460 70 A 170 170 0 0 1 570 105 Z" fill="url(#core-sun-grad)" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- ORBIT LAYER 3 (OUTER RING - Radius 170px) -->
+  <!-- ======================================================== -->
+  <g class="orbit-ring-3">
+    <!-- Node 1: React & Node.js (0 deg) -> (460, 70) -->
+    <g transform="translate(460, 70)">
+      <rect x="-46" y="-12" width="92" height="24" rx="12" fill="#0f172a" stroke="#61dafb" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#61dafb" text-anchor="middle">⚛️ React/Node</text>
+    </g>
+
+    <!-- Node 2: Git & GitHub (90 deg) -> (630, 240) -->
+    <g transform="translate(630, 240)">
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="#0f172a" stroke="#f05032" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#fca5a5" text-anchor="middle">🐙 Git/GitHub</text>
+    </g>
+
+    <!-- Node 3: HTML5 & CSS3 (180 deg) -> (460, 410) -->
+    <g transform="translate(460, 410)">
+      <rect x="-46" y="-12" width="92" height="24" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#7dd3fc" text-anchor="middle">🌐 HTML/CSS</text>
+    </g>
+
+    <!-- Node 4: Java & JS (270 deg) -> (290, 240) -->
+    <g transform="translate(290, 240)">
+      <rect x="-42" y="-12" width="84" height="24" rx="12" fill="#0f172a" stroke="#facc15" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#fef08a" text-anchor="middle">☕ Java/JS</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- ORBIT LAYER 2 (MIDDLE RING - Radius 122px) -->
+  <!-- ======================================================== -->
+  <g class="orbit-ring-2">
+    <!-- Node 1: Vision & OpenCV (45 deg) -> (546, 154) -->
+    <g transform="translate(546, 154)">
+      <rect x="-44" y="-12" width="88" height="24" rx="12" fill="#0f172a" stroke="#00f2fe" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#67e8f9" text-anchor="middle">👁️ Vision/CV</text>
+    </g>
+
+    <!-- Node 2: NLP (135 deg) -> (546, 326) -->
+    <g transform="translate(546, 326)">
+      <rect x="-34" y="-12" width="68" height="24" rx="12" fill="#0f172a" stroke="#c084fc" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#e879f9" text-anchor="middle">💬 NLP</text>
+    </g>
+
+    <!-- Node 3: DSA (225 deg) -> (374, 326) -->
+    <g transform="translate(374, 326)">
+      <rect x="-34" y="-12" width="68" height="24" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#34d399" text-anchor="middle">🧩 DSA</text>
+    </g>
+
+    <!-- Node 4: SQL & Power BI (315 deg) -> (374, 154) -->
+    <g transform="translate(374, 154)">
+      <rect x="-44" y="-12" width="88" height="24" rx="12" fill="#0f172a" stroke="#fbbf24" stroke-width="1.2" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="9" font-weight="bold" fill="#fde68a" text-anchor="middle">🗄️ SQL/BI</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- ORBIT LAYER 1 (INNER RING - Radius 72px) -->
+  <!-- ======================================================== -->
+  <g class="orbit-ring-1">
+    <!-- Node 1: Python (0 deg) -> (460, 168) -->
+    <g transform="translate(460, 168)">
+      <circle cx="0" cy="0" r="14" fill="#0b1b38" stroke="#38bdf8" stroke-width="1.5" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="8.5" font-weight="bold" fill="#38bdf8" text-anchor="middle">🐍Py</text>
+    </g>
+
+    <!-- Node 2: Machine Learning (90 deg) -> (532, 240) -->
+    <g transform="translate(532, 240)">
+      <circle cx="0" cy="0" r="14" fill="#1e1038" stroke="#c084fc" stroke-width="1.5" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="8.5" font-weight="bold" fill="#e879f9" text-anchor="middle">ML</text>
+    </g>
+
+    <!-- Node 3: Deep Learning (180 deg) -> (460, 312) -->
+    <g transform="translate(460, 312)">
+      <circle cx="0" cy="0" r="14" fill="#380e2b" stroke="#ec4899" stroke-width="1.5" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="8.5" font-weight="bold" fill="#f472b6" text-anchor="middle">DL</text>
+    </g>
+
+    <!-- Node 4: Data Science (270 deg) -> (388, 240) -->
+    <g transform="translate(388, 240)">
+      <circle cx="0" cy="0" r="14" fill="#092838" stroke="#00f2fe" stroke-width="1.5" filter="url(#orbit-glow)"/>
+      <text x="0" y="4" class="font-mono" font-size="8.5" font-weight="bold" fill="#00f2fe" text-anchor="middle">DS</text>
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CENTRAL AI CORE REACTOR -->
+  <!-- ======================================================== -->
+  <g class="core-animated">
+    <circle cx="460" cy="240" r="38" fill="#0f172a" stroke="url(#core-sun-grad)" stroke-width="2.5" filter="url(#orbit-glow)"/>
+    <circle cx="460" cy="240" r="30" fill="#080e1d" />
+    <circle cx="460" cy="240" r="22" fill="#171233" />
+
+    <g transform="translate(460, 240)">
+      <circle cx="0" cy="0" r="5" fill="#00f2fe" />
+      <path d="M -10 -10 L 10 10 M 10 -10 L -10 10" stroke="#38bdf8" stroke-width="1.2" />
+      <circle cx="-10" cy="-10" r="2" fill="#c084fc" />
+      <circle cx="10" cy="10" r="2" fill="#c084fc" />
+      <circle cx="10" cy="-10" r="2" fill="#00f2fe" />
+      <circle cx="-10" cy="10" r="2" fill="#00f2fe" />
+    </g>
+    <text x="460" y="243" class="font-mono" font-size="7" font-weight="900" fill="#ffffff" text-anchor="middle">AI CORE</text>
+  </g>
+
+</svg>

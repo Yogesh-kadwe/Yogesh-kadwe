@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 410" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="hobbies-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="card-dark-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1a2e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#090f1d" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Neon Header Gradient -->
+    <linearGradient id="hobbies-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Card Glow Filters -->
+    <filter id="glow-cyan-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple-card" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e293b" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes float-c1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes float-c2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes float-c3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes equalizer-play {
+      0%, 100% { height: 6px; y: 16px; }
+      50% { height: 18px; y: 4px; }
+    }
+    @keyframes glow-shift {
+      0%, 100% { stroke-opacity: 0.4; }
+      50% { stroke-opacity: 0.9; }
+    }
+
+    .card-f1 { animation: float-c1 5s ease-in-out infinite; }
+    .card-f2 { animation: float-c2 4.2s ease-in-out 0.4s infinite; }
+    .card-f3 { animation: float-c3 4.8s ease-in-out 0.8s infinite; }
+    .card-f4 { animation: float-c2 5.2s ease-in-out 0.2s infinite; }
+    .card-f5 { animation: float-c1 4.5s ease-in-out 0.6s infinite; }
+    .card-f6 { animation: float-c3 5.5s ease-in-out 1s infinite; }
+
+    .eq-bar1 { animation: equalizer-play 1.2s ease-in-out infinite; }
+    .eq-bar2 { animation: equalizer-play 0.8s ease-in-out infinite 0.2s; }
+    .eq-bar3 { animation: equalizer-play 1.5s ease-in-out infinite 0.4s; }
+    .eq-bar4 { animation: equalizer-play 1.0s ease-in-out infinite 0.1s; }
+
+    .glow-border { animation: glow-shift 3s ease-in-out infinite; }
+
+    .font-sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
+    .font-mono { font-family: 'SF Pro Text', 'Fira Code', 'Roboto Mono', monospace; }
+  </style>
+
+  <!-- Container Base -->
+  <rect x="2" y="2" width="916" height="406" rx="20" fill="url(#hobbies-bg)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="2" y="2" width="916" height="406" rx="20" fill="url(#dot-grid)"/>
+
+  <!-- Top Ambient Glow -->
+  <circle cx="460" cy="40" r="180" fill="#00f2fe" opacity="0.06" filter="url(#glow-cyan-card)"/>
+
+  <!-- Section Header -->
+  <g transform="translate(40, 38)">
+    <rect width="130" height="22" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="65" y="15" class="font-mono" font-size="10" font-weight="bold" fill="#38bdf8" text-anchor="middle" letter-spacing="1">BEYOND CODE</text>
+    
+    <text x="0" y="52" class="font-sans" font-size="28" font-weight="900" fill="url(#hobbies-title-grad)">
+      Technical Interests &amp; Exploration
+    </text>
+    
+    <text x="835" y="50" class="font-mono" font-size="11" fill="#94a3b8" text-anchor="end">
+      [ 6 ACTIVE DISCIPLINES LOADED ]
+    </text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 6 INTERACTIVE TECH INTEREST CARDS (2 ROWS x 3 COLUMNS) -->
+  <!-- ======================================================== -->
+
+  <!-- ROW 1 -->
+
+  <!-- CARD 1: Web Development -->
+  <g transform="translate(40, 115)">
+    <g class="card-f1">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#00f2fe" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#00f2fe" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#0b1e36" stroke="#00f2fe" stroke-width="1.2" />
+      <text x="34" y="40" class="font-mono" font-size="12" font-weight="bold" fill="#00f2fe" text-anchor="middle">&lt;/&gt;</text>
+      
+      <text x="62" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">Web Development</text>
+      <text x="62" y="46" class="font-mono" font-size="9.5" fill="#38bdf8">HTML • CSS • JavaScript</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Building responsive interfaces &amp;
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        interactive web experiences.
+      </text>
+
+      <rect x="18" y="102" width="76" height="16" rx="4" fill="#0e2a47" />
+      <text x="56" y="113" class="font-mono" font-size="8.5" fill="#38bdf8" text-anchor="middle">#Frontend</text>
+      
+      <rect x="100" y="102" width="82" height="16" rx="4" fill="#0e2a47" />
+      <text x="141" y="113" class="font-mono" font-size="8.5" fill="#38bdf8" text-anchor="middle">#JavaScript</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: API Development -->
+  <g transform="translate(325, 115)">
+    <g class="card-f2">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#c084fc" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#24103b" stroke="#c084fc" stroke-width="1.2" />
+      <circle cx="28" cy="39" r="2.5" fill="#c084fc"/>
+      <circle cx="40" cy="39" r="2.5" fill="#c084fc"/>
+      <circle cx="34" cy="29" r="2.5" fill="#e879f9"/>
+      <path d="M 28 39 L 34 29 L 40 39" stroke="#c084fc" stroke-width="1.2"/>
+
+      <text x="62" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">API Development</text>
+      <text x="62" y="46" class="font-mono" font-size="9" fill="#c084fc">OpenAPI • REST • Integration</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Designing APIs and connecting
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        modern applications.
+      </text>
+
+      <rect x="18" y="102" width="70" height="16" rx="4" fill="#33174a" />
+      <text x="53" y="113" class="font-mono" font-size="8.5" fill="#e879f9" text-anchor="middle">#OpenAPI</text>
+      
+      <rect x="94" y="102" width="74" height="16" rx="4" fill="#33174a" />
+      <text x="131" y="113" class="font-mono" font-size="8.5" fill="#e879f9" text-anchor="middle">#REST_APIs</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Cloud & Backend -->
+  <g transform="translate(610, 115)">
+    <g class="card-f3">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#f472b6" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#380e2b" stroke="#f472b6" stroke-width="1.2" />
+      <path d="M 27 38 A 4 4 0 0 1 26 31 A 6 6 0 0 1 36 28 A 5 5 0 0 1 42 33 A 4 4 0 0 1 41 38 Z" fill="none" stroke="#f472b6" stroke-width="1.3"/>
+
+      <text x="62" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">Cloud &amp; Backend</text>
+      <text x="62" y="46" class="font-mono" font-size="8.8" fill="#f472b6">Firebase • Authentication • Hosting</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Exploring backend services,
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        authentication &amp; deployment.
+      </text>
+
+      <rect x="18" y="102" width="68" height="16" rx="4" fill="#421233" />
+      <text x="52" y="113" class="font-mono" font-size="8.5" fill="#f472b6" text-anchor="middle">#Firebase</text>
+
+      <rect x="92" y="102" width="76" height="16" rx="4" fill="#421233" />
+      <text x="130" y="113" class="font-mono" font-size="8.5" fill="#f472b6" text-anchor="middle">#CloudDeploy</text>
+    </g>
+  </g>
+
+  <!-- ROW 2 -->
+
+  <!-- CARD 4: Cryptography & Security -->
+  <g transform="translate(40, 255)">
+    <g class="card-f4">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#38bdf8" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#0b243b" stroke="#38bdf8" stroke-width="1.2" />
+      <rect x="29" y="33" width="10" height="8" rx="1.5" fill="none" stroke="#38bdf8" stroke-width="1.3"/>
+      <path d="M 31 33 V 30 A 3 3 0 0 1 37 30 V 33" fill="none" stroke="#38bdf8" stroke-width="1.3"/>
+      <circle cx="34" cy="37" r="1" fill="#38bdf8"/>
+
+      <text x="62" y="32" class="font-sans" font-size="14.5" font-weight="bold" fill="#f8fafc">Cryptography &amp; Security</text>
+      <text x="62" y="46" class="font-mono" font-size="8.8" fill="#38bdf8">Encryption • Hashing • Secure Systems</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Learning secure data handling
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        and modern cryptography.
+      </text>
+
+      <rect x="18" y="102" width="76" height="16" rx="4" fill="#0e2a47" />
+      <text x="56" y="113" class="font-mono" font-size="8.5" fill="#38bdf8" text-anchor="middle">#Encryption</text>
+
+      <rect x="100" y="102" width="68" height="16" rx="4" fill="#0e2a47" />
+      <text x="134" y="113" class="font-mono" font-size="8.5" fill="#38bdf8" text-anchor="middle">#Security</text>
+    </g>
+  </g>
+
+  <!-- CARD 5: Database Engineering -->
+  <g transform="translate(325, 255)">
+    <g class="card-f5">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#fbbf24" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#33240a" stroke="#fbbf24" stroke-width="1.2" />
+      <ellipse cx="34" cy="29" rx="7" ry="2.5" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+      <path d="M 27 29 V 35 C 27 36.5 30.1 37.5 34 37.5 C 37.9 37.5 41 36.5 41 35 V 29" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+      <path d="M 27 35 V 41 C 27 42.5 30.1 43.5 34 43.5 C 37.9 43.5 41 42.5 41 41 V 35" fill="none" stroke="#fbbf24" stroke-width="1.2"/>
+
+      <text x="62" y="32" class="font-sans" font-size="14.5" font-weight="bold" fill="#f8fafc">Database Engineering</text>
+      <text x="62" y="46" class="font-mono" font-size="8.8" fill="#fbbf24">MySQL • PostgreSQL • Data Management</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Working with relational databases
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        and structured data.
+      </text>
+
+      <rect x="18" y="102" width="60" height="16" rx="4" fill="#3d2c0b" />
+      <text x="48" y="113" class="font-mono" font-size="8.5" fill="#fbbf24" text-anchor="middle">#MySQL</text>
+
+      <rect x="84" y="102" width="80" height="16" rx="4" fill="#3d2c0b" />
+      <text x="124" y="113" class="font-mono" font-size="8.5" fill="#fbbf24" text-anchor="middle">#PostgreSQL</text>
+    </g>
+  </g>
+
+  <!-- CARD 6: Python Development -->
+  <g transform="translate(610, 255)">
+    <g class="card-f6">
+      <rect width="265" height="125" rx="14" fill="url(#card-dark-1)" stroke="#34d399" stroke-width="1.2" class="glow-border" />
+      <path d="M 14 0 L 251 0" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+      
+      <circle cx="34" cy="35" r="18" fill="#0d2e20" stroke="#34d399" stroke-width="1.2" />
+      <text x="34" y="40" class="font-mono" font-size="12" font-weight="bold" fill="#34d399" text-anchor="middle">&gt;_</text>
+
+      <text x="62" y="32" class="font-sans" font-size="15" font-weight="bold" fill="#f8fafc">Python Development</text>
+      <text x="62" y="46" class="font-mono" font-size="9" fill="#34d399">Automation • Backend • Data Tools</text>
+      
+      <text x="18" y="76" class="font-sans" font-size="11.5" fill="#94a3b8">
+        Building useful applications,
+      </text>
+      <text x="18" y="92" class="font-sans" font-size="11.5" fill="#94a3b8">
+        scripts &amp; data workflows.
+      </text>
+
+      <rect x="18" y="102" width="76" height="16" rx="4" fill="#0f3b28" />
+      <text x="56" y="113" class="font-mono" font-size="8.5" fill="#34d399" text-anchor="middle">#Automation</text>
+
+      <rect x="100" y="102" width="72" height="16" rx="4" fill="#0f3b28" />
+      <text x="136" y="113" class="font-mono" font-size="8.5" fill="#34d399" text-anchor="middle">#Workflows</text>
+    </g>
+  </g>
+
+</svg>
