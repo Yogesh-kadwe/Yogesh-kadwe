@@ -6,17 +6,6 @@
 </a>
 
 <br/><br/>
-
-<h1>👋 Hi there, I'm Yogesh Kadwe</h1>
-
-<p align="center">
-  <b>🎓 B.Tech CSE Student</b> &nbsp;|&nbsp; <b>📊 Aspiring Data Scientist</b> &nbsp;|&nbsp; <b>🏛️ SBJITMR, Nagpur</b>
-</p>
-
-<p align="center">
-  <i>Passionate about Artificial Intelligence, Machine Learning, Computer Vision, and full-stack software development. Driven by transforming complex datasets into intelligent, real-world solutions and interactive applications.</i>
-</p>
-
 <!-- QUICK NAVIGATION -->
 <p align="center">
   <a href="#about-me">
@@ -240,18 +229,6 @@
 ---
 
 <div id="contribution-snake" align="center">
-
-## 🐍 GitHub Contribution Grid Snake
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Yogesh-kadwe/Yogesh-kadwe/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Yogesh-kadwe/Yogesh-kadwe/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution grid snake animation" src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" width="100%" />
-</picture>
-
-</div>
 
 ---
 
