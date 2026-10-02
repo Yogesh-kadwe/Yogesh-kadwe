@@ -29,16 +29,8 @@
 
 ---
 
-<div id="about-me" align="center">
 
-<!-- 2. ABOUT ME SECTION -->
-<a href="https://github.com/Yogesh-kadwe">
-  <img src="./about-life.svg" alt="About Me - Yogesh Kadwe" width="100%" />
-</a>
 
-</div>
-
----
 
 <div id="technical-interests" align="center">
 
