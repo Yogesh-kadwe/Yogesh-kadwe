@@ -65,6 +65,7 @@
     .glow-pink { animation: pulse-pink 3s infinite ease-in-out 0.5s; }
     .glow-purple { animation: pulse-purple 3s infinite ease-in-out 1s; }
 
+    a { cursor: pointer; text-decoration: none; }
     .font-sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; }
     .font-mono { font-family: 'SF Pro Text', 'Fira Code', 'Roboto Mono', monospace; }
   </style>
