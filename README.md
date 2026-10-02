@@ -235,9 +235,7 @@
 <div id="connect-with-me" align="center">
 
 <!-- 11. CONNECT SECTION -->
-<a href="https://github.com/Yogesh-kadwe">
-  <img src="./connect.svg" alt="Connect With Me - Yogesh Kadwe" width="100%" />
-</a>
+<img src="./connect.svg" alt="Connect With Me - Yogesh Kadwe" width="100%" />
 
 <br/><br/>
 
