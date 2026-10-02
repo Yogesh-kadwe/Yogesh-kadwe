@@ -226,19 +226,6 @@
 
 </div>
 
----
-
-<div id="contribution-snake" align="center">
-
----
-
-<div id="connect-with-me" align="center">
-
-<!-- 11. CONNECT SECTION -->
-<img src="./connect.svg" alt="Connect With Me - Yogesh Kadwe" width="100%" />
-
-<br/><br/>
-
 <!-- REAL SOCIAL LINKS & BUTTONS -->
 <p align="center">
   <a href="https://www.linkedin.com/in/yogesh-kadwe-a29985333" target="_blank">
