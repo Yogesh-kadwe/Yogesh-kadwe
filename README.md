@@ -22,8 +22,8 @@
   <a href="#about-me">
     <img src="https://img.shields.io/badge/👤%20About-Profile-00f2fe?style=for-the-badge&labelColor=0d1117" alt="About" />
   </a>
-  <a href="#what-i-build">
-    <img src="https://img.shields.io/badge/⚡%20Focus-What%20I%20Build-38bdf8?style=for-the-badge&labelColor=0d1117" alt="What I Build" />
+  <a href="#technical-interests">
+    <img src="https://img.shields.io/badge/⚡%20Interests-Exploration-38bdf8?style=for-the-badge&labelColor=0d1117" alt="Technical Interests" />
   </a>
   <a href="#tech-orbit">
     <img src="https://img.shields.io/badge/🪐%20Orbit-Tech%20Stack-a855f7?style=for-the-badge&labelColor=0d1117" alt="Tech Stack" />
@@ -46,58 +46,6 @@
 <a href="https://github.com/Yogesh-kadwe">
   <img src="./about-life.svg" alt="About Me - Yogesh Kadwe" width="100%" />
 </a>
-
-</div>
-
-<br/>
-
-### 🌟 About Me & Vision
-
-- 🎓 **Education:** B.Tech CSE Student at **SBJITMR, Nagpur** *(S.B. Jain Institute of Technology, Management & Research)*
-- 📊 **Profile:** Aspiring Data Scientist with strong analytical and problem-solving focus
-- 🐍 **Data & Analytics Stack:** Python | SQL | Machine Learning | Data Analysis
-- 🤖 **AI & Applied Specializations:** Artificial Intelligence | Machine Learning | Computer Vision | NLP
-- 🌱 **Currently Learning:** Data Science, Statistics, Power BI & Deep Learning
-- 🚀 **Mission:** Building end-to-end projects to solve practical problems and strengthen my Data Science portfolio
-
----
-
-<div id="what-i-build">
-
-## ⚡ What I Build & Engineering Domains
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="left">📊 Data Science & Analytics</h3>
-      <p>Performing exploratory data analysis (EDA), statistical modeling, feature engineering, and data cleaning using Python, Pandas, NumPy, and SQL.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="left">🧠 AI & Machine Learning</h3>
-      <p>Developing predictive models, supervised & unsupervised machine learning algorithms, classification models, and evaluating accuracy metrics.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="left">👁️ Computer Vision Applications</h3>
-      <p>Building image processing pipelines, object detection, contour analysis, and visual recognition tools using OpenCV and Python.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="left">💬 Natural Language Processing (NLP)</h3>
-      <p>Creating text classification engines, sentiment analysis models, and semantic processing tools for unstructured text data.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="left">🌐 Web Applications</h3>
-      <p>Building responsive, user-friendly full-stack web applications utilizing HTML5, CSS3, JavaScript, React, Node.js, and relational database backends.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="left">🧩 Problem Solving & DSA</h3>
-      <p>Practicing Data Structures and Algorithms in Java and Python to write optimal, clean, and scalable code.</p>
-    </td>
-  </tr>
-</table>
 
 </div>
 
@@ -138,33 +86,22 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </p>
 
-### 🧠 Data Science, Machine Learning & AI
-<p>
-  <img src="https://img.shields.io/badge/Data%20Science-00B4D8?style=for-the-badge&logo=jupyter&logoColor=white" alt="Data Science" />
-  <img src="https://img.shields.io/badge/Machine%20Learning-7B2CBF?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Machine Learning" />
-  <img src="https://img.shields.io/badge/Computer%20Vision-00F2FE?style=for-the-badge&logo=opencv&logoColor=black" alt="Computer Vision" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLOv8" />
-  <img src="https://img.shields.io/badge/NLP-8B5CF6?style=for-the-badge&logo=spacy&logoColor=white" alt="NLP" />
-  <img src="https://img.shields.io/badge/Deep%20Learning-EC4899?style=for-the-badge&logo=tensorflow&logoColor=white" alt="Deep Learning" />
-  <img src="https://img.shields.io/badge/Statistics-10B981?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Statistics" />
-</p>
-
-### 🌐 Web & Backend Engineering
+### 🌐 Frameworks, Backend & Databases
 <p>
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/DSA-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="DSA" />
 </p>
 
-### 📊 Tools, BI & Version Control
+### 📊 AI, Data & Developer Tools
 <p>
-  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/YOLOv8-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" alt="YOLOv8" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
